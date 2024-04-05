@@ -1,0 +1,245 @@
+% =======================
+% Article
+% =======================
+@article{cavalcantisemistructured,
+  title={Semistructured Merge on Git: An Assessment},
+  author={Cavalcanti, Guilherme and Accioly, Paola and Borba, Paulo}
+}
+
+@INPROCEEDINGS {galileu,
+author={Santos, Galileu and Borba, Paulo and Bonifacio, Rodrigo and Barbosa, Matheus},
+booktitle={International Conference on Software  Engineering},
+title={Poster: Lightweight Semantic Conflict Detection with Static Analysis},
+year={2024},
+month={April} 
+}
+
+@inproceedings{10.1145/3555228.3555242,
+author = {Barbosa, Matheus and Borba, Paulo and Bonifacio, Rodrigo and Santos, Galileu},
+title = {Semantic conflict detection with overriding assignment analysis},
+year = {2022},
+isbn = {9781450397353},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3555228.3555242},
+doi = {10.1145/3555228.3555242},
+abstract = {Developers typically work collaboratively and often need to embed their code into a major version of the system. This process can cause merge conflicts, affecting team productivity. Some of these conflicts require understanding software behavior (semantic conflicts) and current version control tools are not able to detect that. So here we explore how such conflicts could be automatically detected using static analysis of the integrated code. We propose and implement an assignment overriding analysis, which aims to detect interference between changes introduced by two different developers, where write paths, without intermediate assignments, to a common target indicate interference. To evaluate the implementations of the proposed analysis, a set of 78 code integration scenarios was used. The results show that the proposed analysis is able to detect scenarios with assignment overriding and with locally observable interference between the contributions.},
+booktitle = {Proceedings of the XXXVI Brazilian Symposium on Software Engineering},
+pages = {435–445},
+numpages = {11},
+location = {<conf-loc>, <city>Virtual Event</city>, <country>Brazil</country>, </conf-loc>},
+series = {SBES '22}
+}
+
+
+@inproceedings{zimmermann2007mining,
+  title={Mining workspace updates in CVS},
+  author={Zimmermann, Thomas},
+  booktitle={Fourth International Workshop on Mining Software Repositories (MSR'07: ICSE Workshops 2007)},
+  pages={11--11},
+  year={2007},
+  organization={IEEE}
+}
+
+@inproceedings{bird2012assessing,
+  title={Assessing the value of branches with what-if analysis},
+  author={Bird, Christian and Zimmermann, Thomas},
+  booktitle={Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering},
+  pages={45},
+  year={2012},
+  organization={ACM}
+}
+
+
+@article{brun2013early,
+  title={Early detection of collaboration conflicts and risks},
+  author={Brun, Yuriy and Holmes, Reid and Ernst, Michael D and Notkin, David},
+  journal={IEEE Transactions on Software Engineering},
+  volume={39},
+  number={10},
+  pages={1358--1375},
+  year={2013},
+  publisher={IEEE}
+}
+
+@inproceedings{kasi2013cassandra,
+  title={Cassandra: Proactive conflict minimization through optimized task scheduling},
+  author={Kasi, Bakhtiar Khan and Sarma, Anita},
+  booktitle={Proceedings of the 2013 International Conference on Software Engineering},
+  pages={732--741},
+  year={2013},
+  organization={IEEE Press}
+}
+
+
+@article{accioly2018understanding,
+  title={Understanding semi-structured merge conflict characteristics in open-source java projects},
+  author={Accioly, Paola and Borba, Paulo and Cavalcanti, Guilherme},
+  journal={Empirical Software Engineering},
+  volume={23},
+  number={4},
+  pages={2051--2085},
+  year={2018},
+  publisher={Springer}
+}
+
+@inproceedings{accioly2018analyzing,
+  title={Analyzing conflict predictors in open-source java projects},
+  author={Accioly, Paola and Borba, Paulo and Silva, L{\'e}uson and Cavalcanti, Guilherme},
+  booktitle={Proceedings of the 15th International Conference on Mining Software Repositories},
+  pages={576--586},
+  year={2018},
+  organization={ACM}
+}
+
+
+@article{Horwitz1989IntegratingNV,
+  title={Integrating noninterfering versions of programs},
+  author={Susan Horwitz and Jan Prins and T. Reps},
+  journal={ACM Trans. Program. Lang. Syst.},
+  year={1989},
+  volume={11},
+  pages={345-387}
+}
+
+
+@article{10.1145/3133883,
+author = {Cavalcanti, Guilherme and Borba, Paulo and Accioly, Paola},
+title = {Evaluating and Improving Semistructured Merge},
+year = {2017},
+issue_date = {October 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {1},
+number = {OOPSLA},
+url = {https://doi.org/10.1145/3133883},
+doi = {10.1145/3133883},
+abstract = {While unstructured merge tools rely only on textual analysis to detect and resolve conflicts, semistructured merge tools go further by partially exploiting the syntactic structure and semantics of the involved artifacts. Previous studies compare these merge approaches with respect to the number of reported conflicts, showing, for most projects and merge situations, reduction in favor of semistructured merge. However, these studies do not investigate whether this reduction actually leads to integration effort reduction (productivity) without negative impact on the correctness of the merging process (quality). To analyze that, and better understand how merge tools could be improved, in this paper we reproduce more than 30,000 merges from 50 open source projects, identifying conflicts incorrectly reported by one approach but not by the other (false positives), and conflicts correctly reported by one approach but missed by the other (false negatives). Our results and complementary analysis indicate that, in the studied sample, the number of false positives is significantly reduced when using semistructured merge. We also find evidence that its false positives are easier to analyze and resolve than those reported by unstructured merge. However, we find no evidence that semistructured merge leads to fewer false negatives, and we argue that they are harder to detect and resolve than unstructured merge false negatives. Driven by these findings, we implement an improved semistructured merge tool that further combines both approaches to reduce the false positives and false negatives of semistructured merge. We find evidence that the improved tool, when compared to unstructured merge in our sample, reduces the number of reported conflicts by half, has no additional false positives, has at least 8% fewer false negatives, and is not prohibitively slower.},
+journal = {Proc. ACM Program. Lang.},
+month = {oct},
+articleno = {59},
+numpages = {27},
+keywords = {software merging, collaborative development, version control systems}
+}
+
+@inproceedings{Bird2012AssessingTV,
+  title={Assessing the value of branches with what-if analysis},
+  author={Christian Bird and Thomas Zimmermann},
+  booktitle={SIGSOFT FSE},
+  year={2012}
+}
+
+@article{10.1145/383876.383878,
+author = {Perry, Dewayne E. and Siy, Harvey P. and Votta, Lawrence G.},
+title = {Parallel Changes in Large-Scale Software Development: An Observational Case Study},
+year = {2001},
+issue_date = {July 2001},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {10},
+number = {3},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/383876.383878},
+doi = {10.1145/383876.383878},
+abstract = {An essential characteristic of large-scale software development is parallel development by teams of developers. How this parallel development is structured and supported has a profound effect on both the quality and timeliness of the product. We conduct an observational case study in which we collect and analyze the change and configuration management history of a legacy system to delineate the boundaries of, and to understand the nature of, the problems encountered in parallel development. The results of our studies are (1) that the degree of parallelism is very highhigher than considered by tool builders; (2) there are multiple levels of parallelism, and the data for some important aspects are uniform and consistent for all levels; (3) the tails of the distributions are long,  indicating the tail, rather than the mean, must receive serious attention in providing solutions for these problems; and (4) there is a significant correlation between the degree of parallel work on a given component and the number of quality problems it has. Thus, the results of this study are important both for tool builders and for process and project engineers.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = {jul},
+pages = {308–337},
+numpages = {30},
+keywords = {change management, parallel versions, software integration, merging interfering and noninterfering versions, parallel/concurrent changes}
+}
+
+@inproceedings{10.1145/2652524.2652547,
+author = {Shridhar, Mini and Adams, Bram and Khomh, Foutse},
+title = {A Qualitative Analysis of Software Build System Changes and Build Ownership Styles},
+year = {2014},
+isbn = {9781450327749},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2652524.2652547},
+doi = {10.1145/2652524.2652547},
+abstract = {<u>Context:</u> Recent empirical studies have shown quantitatively how software build systems, which are responsible for converting software artifacts into an installable deliverable for the end user, induce considerable overhead on software developers, taking away their focus from actual development.<u>Goal:</u> Little, however, is known of what are the typical types of changes that these developers need to make to build systems, the characteristics of these changes and whether developers work on these changes by themselves, or are co-ordinated by build experts.<u>Method:</u> This paper qualitatively investigates the build commit history of 18 open-source projects from the Apache and Eclipse eco-systems, over a period of fourteen months, using manual tagging and classification of change types and build system ownership styles.<u>Results:</u> "Corrective", "Adaptive" and "New Functionality" build changes introduce considerably higher churn and are more invasive, while many changes are identified by accident during regular development. Having dedicated build experts allows software projects to make more invasive "Adaptive" changes.<u>Conclusions:</u> Build system studies need to take into account the type of build change, since not all build changes are equal.},
+booktitle = {Proceedings of the 8th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement},
+articleno = {29},
+numpages = {10},
+keywords = {software evolution, empirical study, qualitative analysis, build system},
+location = {Torino, Italy},
+series = {ESEM '14}
+}
+
+@article{lima2014abordagem,
+  title={Uma abordagem para evolu{\c{c}}{\~a}o e reconcilia{\c{c}}{\~a}o de linhas de produtos de software clonadas},
+  author={Lima, Gleydson de Azevedo Ferreira},
+  year={2014},
+  publisher={Universidade Federal do Rio Grande do Norte}
+}
+
+@article{mens2002state,
+  title={A state-of-the-art survey on software merging},
+  author={Mens, Tom},
+  journal={IEEE transactions on software engineering},
+  volume={28},
+  number={5},
+  pages={449--462},
+  year={2002},
+  publisher={IEEE}
+}
+
+@article{article,
+author = {Nordio, Martin and Estler, H. and Furia, Carlo and Meyer, Bertrand},
+year = {2011},
+month = {05},
+pages = {},
+title = {Collaborative Software Development on the Web},
+journal = {Computing Research Repository - CORR}
+}
+
+@inproceedings{10.1145/1810295.1810339,
+author = {Hattori, Lile and Lanza, Michele},
+title = {Syde: A Tool for Collaborative Software Development},
+year = {2010},
+isbn = {9781605587196},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1810295.1810339},
+doi = {10.1145/1810295.1810339},
+abstract = {Team collaboration is essential for the success of multi-developer projects. When team members are spread across different locations, individual awareness of the activity of others drops due to communication barriers.We built Syde, a tool infrastructure to reestablish team awareness by sharing change and conflict information across developer's workspaces. Our main challenge is to balance the tradeoff between offering relevant information about the activity of the team and avoiding information overload. The novelty of our approach is that we model source code changes as first-class entities to record the detailed evolution of a multi-developer project. Hence, Syde delivers precise change information to interested developers.},
+booktitle = {Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 2},
+pages = {235–238},
+numpages = {4},
+keywords = {change, visualization, awareness, collaboration, Syde},
+location = {Cape Town, South Africa},
+series = {ICSE '10}
+}
+
+@inproceedings{10.1145/2025113.2025139,
+author = {Brun, Yuriy and Holmes, Reid and Ernst, Michael D. and Notkin, David},
+title = {Proactive Detection of Collaboration Conflicts},
+year = {2011},
+isbn = {9781450304436},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2025113.2025139},
+doi = {10.1145/2025113.2025139},
+abstract = {Collaborative development can be hampered when conflicts arise because developers have inconsistent copies of a shared project. We present an approach to help developers identify and resolve conflicts early, before those conflicts become severe and before relevant changes fade away in the developers' memories. This paper presents three results.First, a study of open-source systems establishes that conflicts are frequent, persistent, and appear not only as overlapping textual edits but also as subsequent build and test failures. The study spans nine open-source systems totaling 3.4 million lines of code; our conflict data is derived from 550,000 development versions of the systems.Second, using previously-unexploited information, we precisely diagnose important classes of conflicts using the novel technique of speculative analysis over version control operations.Third, we describe the design of Crystal, a publicly-available tool that uses speculative analysis to make concrete advice unobtrusively available to developers, helping them identify, manage, and prevent conflicts.},
+booktitle = {Proceedings of the 19th ACM SIGSOFT Symposium and the 13th European Conference on Foundations of Software Engineering},
+pages = {168–178},
+numpages = {11},
+keywords = {version control, crystal, collaboration conflicts, developer awareness, collaborative development, speculative analysis},
+location = {Szeged, Hungary},
+series = {ESEC/FSE '11}
+}
+
+@inproceedings{10.5555/2486788.2486884,
+author = {Kasi, Bakhtiar Khan and Sarma, Anita},
+title = {Cassandra: Proactive Conflict Minimization through Optimized Task Scheduling},
+year = {2013},
+isbn = {9781467330763},
+publisher = {IEEE Press},
+abstract = { Software conflicts arising because of conflicting changes are a regular occurrence and delay projects. The main precept of workspace awareness tools has been to identify potential conflicts early, while changes are still small and easier to resolve. However, in this approach conflicts still occur and require developer time and effort to resolve. We present a novel conflict minimization technique that proactively identifies potential conflicts, encodes them as constraints, and solves the constraint space to recommend a set of conflict-minimal development paths for the team. Here we present a study of four open source projects to characterize the distribution of conflicts and their resolution efforts. We then explain our conflict minimization technique and the design and implementation of this technique in our prototype, Cassandra. We show that Cassandra would have successfully avoided a majority of conflicts in the four open source test subjects. We demonstrate the efficiency of our approach by applying the technique to a simulated set of scenarios with higher than normal incidence of conflicts. },
+booktitle = {Proceedings of the 2013 International Conference on Software Engineering},
+pages = {732–741},
+numpages = {10},
+location = {San Francisco, CA, USA},
+series = {ICSE '13}
+}
