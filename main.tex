@@ -104,7 +104,7 @@
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{conflitos de integração de código, ferramenta de merge semântica}
+\keywords{code integration conflicts, dynamic semantic conflicts, semantic merge tool}
 
 
 \begin{abstract}
@@ -114,7 +114,7 @@ Dynamic semantic conflicts refer to situations in which there are no apparent te
 There are currently a variety of tools available that take different approaches to addressing this challenge. These range from static analyzes to the implementation of automated tests.
 However, it is observed that the test-centric approach generally results in a higher number of false negatives, while static analyzes tend to have a higher incidence of false positives.
 Additionally, these tools are limited to identifying interferences that occur within the same method or in subsequent methods, which may not reflect the real complexity of the systems. Furthermore, they were evaluated mainly in open source scenarios, without the direct insertion of human intervention in corporate environments.
-In this study, we propose improving static analyzes to enable their execution with different entry points, aiming to identify interferences in different areas of a system. Furthermore, we propose the creation of an infrastructure that integrates the Git merge process, to be implemented on developers' machines in a corporate context. This will enable the collection of merge reports and the conduct of qualitative assessments with the active participation of the professionals involved.
+In this study, we propose improving static analyzes to enable their execution with different entry points, aiming to identify interferences in different areas of a system. Furthermore, we propose the use of a semantic merge tool that integrates the Git merge process, to be implemented on developers' machines in an industrial-strength context. This will enable the collection of merge reports, allowing an analysis of performance and accuracy using the active participation of the professionals involved as ground truth.
 \end{abstract}
 
 
@@ -142,9 +142,9 @@ Several approaches have been explored to deal with semantic conflict detection. 
 
 On the other hand, static analysis algorithms have been proposed to identify semantic conflicts \cite{barros2017using, binkley1995program, Horwitz1989IntegratingNV}, using complex graphs, such as System Dependence Graphs. However, as the size of code bases increases, these approaches suffer significant performance degradation, making them impractical for applications on real code bases with more than 50 thousand lines of code. Given this scenario, there is a need to explore simplifications in existing algorithms, aiming to detect semantic conflicts with lower computational cost.
 
-Recently, in our research, we introduced the use of simplified \cite{galileu} static analyses, focused exclusively on the merged version of the code. Our approach involves tagging this version with metadata that indicates which instructions were modified or added by each developer. However, this approach faces two significant challenges. First, these tools are restricted to identifying interferences that manifest within the same or subsequent methods, which may not adequately represent the complexity inherent in real systems. Second, their evaluation was predominantly conducted in open source environments, where direct human intervention in corporate contexts was not considered.
+Recently, in our research, we introduced the use of lightweight static analyses \cite{galileu}, focused exclusively on the merged version of the code. Our approach involves tagging this version with metadata that indicates which instructions were modified or added by each developer. However, this approach faces two significant challenges. First, these tools are restricted to identifying interferences that manifest within the same or subsequent methods, which may not adequately represent the complexity inherent in real systems. Second, their evaluation was predominantly conducted in open source environments, where direct human intervention in corporate contexts was not considered.
 
-In this context, this study proposes improvements in static analyses, aiming at adapting them to operate with different entry points, in order to identify interferences in different areas of a system. Furthermore, the article presents an investigation into the use of simplified static analyzes to detect interference, with the participation of real developers in their work environments.
+In this context, this study proposes improvements in static analyses, aiming at adapting them to operate with different entry points, in order to identify interferences in different areas of a system. Furthermore, the article presents an investigation into the use of lightweight static analyses to detect interference, with the participation of real developers in their work environments.
 
 \section{BACKGROUND AND RELATED WORK}
 
@@ -192,15 +192,17 @@ The accuracy of our technique is comparable to those observed in other studies t
 
 \section{CONTRIBUTION TO KNOWLEDGE}
 
-Despite advances in merge tools, there are still significant challenges in detecting dynamic semantic conflicts during the software integration process. Several tools pursue varying approaches to solving this problem, but face performance challenges or limitations in detecting interferences that occur only within the same method or in subsequent methods. Furthermore, it is common that these tools have never been tested for their usability by humans.
+Despite advances in merge tools, there are still significant challenges in detecting dynamic semantic conflicts during the software integration process. Several tools pursue varying approaches to solving this problem, but face performance challenges or limitations in detecting interferences that occur only within the same method or in subsequent methods. Furthermore, it is common that these tools have never been tested for their practical utility by humans.
 
-In our work, we propose the creation of an infrastructure that integrates the Git merge process, to be implemented on developers' machines in a corporate context, aiming to identify interferences between changes introduced by two different developers and carry out a qualitative study seeking to improve our understanding of the usability of tools of this type in this specific context.
+The doctoral work has recently completed two years of dedicated research. As highlighted in previous sections, we have already been able to validate the effectiveness of static analysis in identifying semantic conflicts in development environments, using relevant repositories hosted on GitHub. Now, we aim to advance in this field, by applying our methodology in real work environments with active developers in companies.
 
-The doctoral work is at an early stage, having recently completed two years of dedicated research. As highlighted in previous studies, we have already been able to validate the effectiveness of static analysis in identifying semantic conflicts in development environments, using relevant repositories hosted on GitHub. Now, we aim to advance in this field, seeking to apply our methodology in real work environments, with active developers in companies from different sectors.
+We will implement and compare algorithms to find the entry point most suitable for use in static analysis. These algorithms include using as an entry point the method changed by two developers, the method changed by at least one developer, the most recent common ancestor method between the methods changed by two developers, or a hybrid approach.
 
-Our proposal is to integrate our tool directly into these professionals' workflows, allowing us to capture detailed data during execution. By collecting records of these interactions, we will have access to a more accurate and comprehensive view of the tool's use in practical scenarios. This approach will enable us to not only validate the effectiveness of static analysis in a more dynamic and complex context, but also better understand the needs and challenges developers face on a daily basis.
+We also propose the use of a semantic merge tool that integrates the Git merge process, to be implemented on developers' machines in an industrial-strength context, using the appropriate entry point algorithms, aiming to identify interferences between changes introduced by two different developers. This will enable the collection of merge reports, allowing an analysis of performance and accuracy using the active participation of the professionals involved as ground truth through a firehouse interview. 
 
-From this data, we will be able to generate more informative and relevant reports, offering valuable insights for both developers and research and development teams. We hope that this direct collaboration with professionals in the field will not only strengthen the validity of our approach, but also contribute to the advancement of knowledge and practices in detecting and resolving semantic conflicts in software projects.
+By collecting records of these interactions, we will have access to a more accurate and comprehensive view of the tool's use in practical scenarios. This approach will enable us to not only validate the performance and accuracy of static analysis in a more dynamic and complex context, but also better understand the needs and challenges developers face on a daily.
+
+We hope that this direct collaboration with professionals in the field will not only strengthen the validity of our approach but also contribute to the advancement of knowledge and practices in detecting and resolving semantic conflicts in software projects.
 
 \section*{ACKNOWLEDGMENTS}
 The author received guidance from Dr. Paulo Borda, Member of the ACM and the Brazilian Computing Society, professor of Software Engineering at the Informatics Center of the Federal University of Pernambuco and leader of the Software Productivity Group. He is currently also director of the Information Technology Center.
